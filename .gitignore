@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+*.iml
+*~
+.vscode/
+# Vim swap files
+*.sw[a-p]
+.*.sw[a-p]
+
+# Local dev tools
+.codegraph/
+.claude/
+
+# Claude working guide (internal only; not published to the public tap)
+CLAUDE.md
+
+# Homebrew local testing artifacts
+*.tar.gz
+*.dmg
+*.zip
+*.pkg
+home/
+logs/
