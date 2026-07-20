@@ -1,0 +1,18 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# cask の書式・非推奨記法を静的に検査する。brew style は Homebrew 同梱の
+# cask 専用 cop を積んだ RuboCop で、ネットワーク接続も HOMEBREW_DEVELOPER も
+# 不要。depends_on の非推奨記法もここで検出できる（それを見落として 1.0.0 を
+# 出したのがこの CI を置く動機）。GitHub の macOS ランナーには Homebrew が
+# 同梱されているためセットアップ手順は要らない。
+jobs:
+  style:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v6
+      - run: brew style Casks/

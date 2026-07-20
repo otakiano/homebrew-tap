@@ -4,7 +4,7 @@ cask "edgification" do
 
   url "https://github.com/otakiano/Edgification/releases/download/v#{version}/Edgification-#{version}.zip"
   name "Edgification"
-  desc "Edge notification effects for macOS"
+  desc "Screen-edge glow so you never miss what matters"
   homepage "https://github.com/otakiano/Edgification"
 
   livecheck do
@@ -13,7 +13,6 @@ cask "edgification" do
   end
 
   auto_updates true
-
   depends_on macos: :tahoe
 
   app "Edgification.app"
