@@ -1,6 +1,6 @@
 cask "edgification" do
-  version "1.0.0"
-  sha256 "12de54921a5d78b7e7369518e429756baf0c2f6381b589a3bf7a573481a515df"
+  version "1.0.1"
+  sha256 "8520f79cb989b76757f07ddc05c15177f960f66e73ba55622d31d1e20ab5dc55"
 
   url "https://github.com/otakiano/Edgification/releases/download/v#{version}/Edgification-#{version}.zip"
   name "Edgification"
